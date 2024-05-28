@@ -1,0 +1,133 @@
+/* Hide the scrollbar */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: none;
+  }
+  
+  /* ----NavBar--- */
+  
+  p {
+    color: #676968;
+  }
+  
+  .navbar_button {
+    border-radius: 8px;
+    background: linear-gradient(90deg, #23899c 13.04%, #2ca068 91.03%);
+    color: #fff;
+    border-radius: 7px;
+    font-weight: 700;
+    border: none !important;
+    font-size: 16px;
+  }
+  .navbar-button {
+    border-radius: 8px;
+    background: linear-gradient(90deg, #23899c 13.04%, #2ca068 91.03%);
+    color: #fff;
+    border-radius: 7px;
+    font-weight: 700;
+    border: none !important;
+    font-size: 16px;
+    width: 100% !important;
+    height: 34px !important;
+  }
+  
+  .dropdown-toggle::after {
+    border-top-color: green !important;
+  }
+  
+  /* Custom CSS to change carousel control button color to green */
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: green !important;
+  }
+  
+  /* Custom CSS to change carousel control button icon color to white */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: white;
+  }
+  
+  /* Navbar logo styles */
+  .nav-logo {
+    width: 210px !important;
+    height: 34px !important;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -950px;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+    padding-top: 50px;
+  }
+  
+  .sidebar.active {
+    left: 0;
+  }
+  #navbarDropdownSolutions,
+  #navbarDropdownIndustries,
+  #navbarDropdownTechnologies,
+  #navbarDropdownPortfolio {
+    color: #676968;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  #nav-a {
+    color: #676968 !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    text-align: left;
+  }
+  #nav-sidebar-ul {
+    font-weight: 400;
+    gap: 10px !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+  
+  .cancel-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .nav-logo-sidebar {
+    width: 138px !important;
+    height: 22.35px !important;
+    margin-top: -50px !important;
+    margin-left: 20px !important;
+  }
+  
+  @media (max-width: 425px) {
+    .nav-logo {
+      height: 30px !important;
+      width: 140px !important;
+    }
+  }
+  
+  /* ----NavBar--- */
+  
+  
