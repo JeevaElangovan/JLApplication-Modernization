@@ -132,3 +132,33 @@ document.addEventListener("DOMContentLoaded", function() {
         openSection.classList.add('active');
     }
 });
+
+
+//  Section - 4 technologies Experties
+
+document.addEventListener("DOMContentLoaded", function () {
+    const tabs = document.querySelectorAll('.col p[data-content]');
+    const contents = document.querySelectorAll('.hidden-content .content');
+
+    function hideAllContents() {
+        contents.forEach(content => {
+            content.classList.remove('visible');
+        });
+    }
+
+    function deactivateAllTabs() {
+        tabs.forEach(tab => {
+            tab.classList.remove('active-tab');
+        });
+    }
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function () {
+            deactivateAllTabs();
+            hideAllContents();
+            const contentId = this.getAttribute('data-content');
+            document.getElementById(contentId).classList.add('visible');
+            this.classList.add('active-tab');
+        });
+    });
+});

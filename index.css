@@ -305,7 +305,7 @@ body {
 
   @media (max-width:425px){
     .modernization-services-res{
-        margin-top: 80px;
+        margin-top: 50px;
     }
     
     .modernization-res-show-down {
@@ -374,8 +374,7 @@ body {
     }
     
     .modernization-res-sec1 label {
-        /* margin-left: 20px;  */
-        /* width: 300px; */
+   
         position: absolute;
         left: 30px;
         font-size: 16px;
@@ -417,7 +416,7 @@ body {
     .modernization-services-res-head h1::after{
         content: "";
         position: absolute;
-        top: 51%;
+        top: 76%;
         margin-left: 15px;
         width: 54px;
         height: 4px;
@@ -462,11 +461,392 @@ body {
     .modernization-res-sec1 label{
         width: 300px;
     }
+    .modernization-services-res-head h1::after{
+        top: 85% !important;
+    }
 }
 @media(min-width:376px)and (max-width:425px){
     .modernization-res-sec1 label{
         width: 380px;
     }
 }
+@media (max-width:320px){
+    .modernization-services-res-head h1::after{
+        top: 85% !important;
+    }
+}
 
   /* ---Section - 2 Application Modernization Services  */
+
+
+
+
+/* ---Secton - 3 Why Choose Us--- */
+
+.why-choose-us{
+    margin-top: 100px;
+}
+
+.why-choose-us-head h1{
+    position: relative;
+}
+
+.why-choose-us-head h1::after{
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 54px;
+    background-color: #2CA068;
+    top: 25px;
+    margin-left: 10px;
+    border-radius: 60px;
+}
+
+.why-choose-us-row{
+    padding-top: 40px;
+}
+
+.why-choose-us-col-1 img{
+    padding-left: 30px;
+}
+
+.why-choose-us-col-2 h5,
+.why-choose-us-col-2 p{
+    margin-left: -180px;
+}
+
+@media(max-width:425px){
+    .why-choose-us-head h1{
+        font-size: xx-large;
+    }
+    .why-choose-us-head h1::after{
+        height: 3px;
+        width: 28px;
+        top: 20px;
+    }
+    
+    .why-choose-us-col-2 p{
+        font-size: 12px;
+    }
+    .why-choose-us-col-2 h5{
+        font-size: 18px;
+    }
+}
+
+@media(min-width:376px) and (max-width:425px){
+    .why-choose-us-col-1 img{
+        padding-left: 20px;
+    }
+    
+    .why-choose-us-col-2 h5,
+    .why-choose-us-col-2 p{
+        margin-left: -130px;
+        padding-right: 15px;
+    }
+}
+
+@media(min-width:321px) and (max-width:375px){
+    .why-choose-us-col-1 img{
+        padding-left: 10px;
+    }
+    
+    .why-choose-us-col-2 h5,
+    .why-choose-us-col-2 p{
+        margin-left: -110px;
+        padding-right: 15px;
+    }
+}
+
+@media(max-width:320px){
+    .why-choose-us-col-1 img{
+        padding-left: 10px;
+    }
+    
+    .why-choose-us-col-2 h5,
+    .why-choose-us-col-2 p{
+        margin-left: -90px;
+        padding-right: 15px;
+    }
+}
+
+/* ---Secton - 3 Why Choose Us--- */
+
+
+/* ----Section - 4 - Technologies Expertise---- */
+
+.technologies-expertise{
+    margin-top:150px !important;
+  }
+  .technologies-part-1 .col p {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; 
+    margin: 0 auto; 
+    padding-bottom: 5px; 
+  }
+  
+  .technologies-part-1 .col p.active-tab::after {
+    position: absolute;
+    content: "";
+    top: calc(100% - 4px); 
+    left: 0; 
+    width: 100%; 
+    height: 3px;
+    border-radius: 2px;
+    background-color: #2CA068; 
+  }
+  
+  .technologies-head1{
+    margin-top: 40px !important;
+    margin-left: 20px !important;
+  }
+  
+  
+  .active-tab {
+    font-weight: bold;
+    color: #000000; 
+    cursor: pointer;
+  }
+  
+  .content {
+    display: none; 
+  }
+  
+  .visible {
+    display: block; 
+  }
+  
+  
+  .technologies-expertise-heading {
+      position: relative;
+      margin-top: 100px;
+  }
+  
+  .technologies-expertise-heading::after {
+      content: "";
+      position: absolute;
+      top: 51%;
+      margin-left: 15px;
+      width: 54px;
+      height: 4px;
+      border-radius: 5px;
+      background-color: #2CA068;
+  }
+
+  
+  .section5-skills p {
+      padding: 13px;
+  }
+  
+  .section5-btn1 button{
+      margin-left: 40%;
+      margin-top: 50px;
+      height: 42px;
+      width: 189px;
+      color: #fff;
+      border-radius: 8px;
+      border: none;
+      font-weight: 500;
+      background: linear-gradient(93.27deg, #23899c -14.73%, #2ca068 104.65%);
+      box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .hidden-content {
+      /* display: none; */
+  }
+  
+  .content {
+      margin-top: 20px;
+    
+  }
+  
+  .heading-button:hover {
+      background-color: lightgray;
+      cursor: pointer;
+  }
+  
+  .technologies-part-1 .col p {
+      cursor: pointer;
+    
+  }
+  
+  .technologies-part-1 .col p:hover {
+      /* background-color: lightgray; */
+  }
+  
+  .technologies-part-1 .col {
+      flex: 0 0 auto;
+      width: 200px; 
+  }
+  .technologies-part-1 .col:nth-child(odd) {
+      margin-right: -70px;
+  }
+  .technologies-part-1 .col:nth-child(even) {
+      margin-right: -70px;
+  }
+  
+  /* Hide scrollbar for WebKit browsers */
+  .overflow-auto::-webkit-scrollbar {
+      display: none;
+  }
+  
+  .image-container {
+      display: flex; 
+      flex-wrap: nowrap; 
+      overflow-x: auto; 
+  }
+  
+  .image-container img {
+      max-width: 100px;
+      margin-right: 30px; 
+  }
+  .image-container::-webkit-scrollbar{
+      display: none;
+  }
+  .technologies-expertise-images{
+    margin-top: 30px;
+  }
+  .technologies-backend-img{
+    margin-left: 100px ;
+  }
+  .technologies-mobility-img,
+  .technologies-design-img{
+    margin-left: 200px;
+  }
+  .technologies-qa-img,
+  .technologies-database-img,
+  .technologies-devops-img{
+    margin-left: 300px;
+  }
+  .technologies-cms-img{
+    margin-left: 400px;
+  }
+  
+  @media (min-width:376px)and (max-width:425px){
+        .technologies-expertise-heading {
+          position: relative;
+        font-size: 30px;
+      }
+      .technologies-expertise{
+        margin-top: -100px !important;
+      }
+      .technologies-expertise-images{
+        margin-top: 40px;
+      }
+  
+      .technologies-head1 {
+        margin-left: 5px !important;
+      }
+      .technologies-part-1{
+        margin-left: -25px;
+      }
+      .technologies-expertise-heading::after {
+          content: "";
+          position: absolute !important;
+          /* margin-top: 0px; */
+          margin-left: 10px;
+          width: 28px !important;
+          height: 3px !important;
+          border-radius: 50px !important;
+          background-color: #2CA068;
+      }
+      .section5-btn1 button{
+          margin-left: 90px;
+      }
+     
+      .technologies-backend-img,
+      .technologies-mobility-img,
+      .technologies-design-img,
+      .technologies-qa-img,
+      .technologies-database-img,
+      .technologies-devops-img,
+      .technologies-cms-img{
+        margin-left: 10px;
+      }
+      
+  }
+  
+  @media (min-width:326px)and (max-width:375px){
+      .technologies-expertise-heading {
+          position: relative;
+        font-size: 26px;
+      }
+      .technologies-expertise{
+        margin-top: -100px !important;
+      }
+      
+      .technologies-expertise-heading::after {
+          content: "";
+          position: absolute !important;
+          /* margin-top: 0px; */
+          margin-left: 10px;
+          width: 28px !important;
+          height: 3px !important;
+          border-radius: 50px !important;
+          background-color: #2CA068;
+      }
+      .section5-btn1 button{
+        margin-left: 60px;
+      }
+      .technologies-head1 {
+        margin-left: 5px !important;
+      }
+      .technologies-part-1{
+        margin-left: -25px;
+      }
+      .technologies-backend-img,
+      .technologies-mobility-img,
+      .technologies-design-img,
+      .technologies-qa-img,
+      .technologies-database-img,
+      .technologies-devops-img,
+      .technologies-cms-img{
+        margin-left: 10px;
+      }
+  }
+  @media (max-width:325px){
+    .technologies-expertise{
+      margin-top: -100px !important;
+    }
+      .technologies-expertise-heading {
+          position: relative;
+        font-size: 23px;
+      }
+      .technologies-head1 {
+        margin-left: 5px !important;
+      }
+      .technologies-part-1{
+        margin-left: -25px;
+      }
+      
+      
+      .technologies-expertise-heading::after {
+          content: "";
+          position: absolute !important;
+          /* margin-top: 0px; */
+          margin-left: 10px;
+          width: 28px !important;
+          height: 3px !important;
+          border-radius: 50px !important;
+          background-color: #2CA068;
+      }
+      .section5-btn1 button{
+          margin-left: 30px;
+      }
+      .technologies-backend-img,
+      .technologies-mobility-img,
+      .technologies-design-img,
+      .technologies-qa-img,
+      .technologies-database-img,
+      .technologies-devops-img,
+      .technologies-cms-img{
+        margin-left: 10px;
+      }
+  }
+  
+    
+  
+  /* ----Section - 4 - Technologies Expertise---- */
+  
+
+
