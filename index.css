@@ -377,13 +377,13 @@ body {
         /* margin-left: 20px;  */
         /* width: 300px; */
         position: absolute;
-        left: 20px;
+        left: 30px;
         font-size: 16px;
         font-weight: 500;
     }
     .modernization-res-sec1 i{
         position: absolute;
-        right: 20px;
+        right: 30px;
         font-weight: 600;
     }
     .modernization-services-res-part1{
@@ -403,7 +403,7 @@ body {
     .modernization-res-show-down p{
         text-align: justify;
         font-size: 12px;
-        padding: 0 30px;
+        padding: 0 20px;
     }
 
   } 
@@ -427,7 +427,7 @@ body {
 }
 
   .modernization-res-sec1.active label{
-    padding-left: 20px;
+    padding-left: 30px;
 
   }
 
@@ -436,12 +436,16 @@ body {
     content: " ";
     height: 10px;
     width: 10px;
-    left: 10px;
+    left: 30px;
     border-radius: 50%;
     background-color: #2CA068;
     /* margin-left: -20px; */
     margin-top: 5px;
 
+}
+
+.modernization-res-sec1.active i{
+    right: 35px;
 }
 
 .modernization-res-sec1.active label{
@@ -456,12 +460,12 @@ body {
 
 @media(min-width:321px)and (max-width:375px){
     .modernization-res-sec1 label{
-        /* width: 300px; */
+        width: 300px;
     }
 }
 @media(min-width:376px)and (max-width:425px){
     .modernization-res-sec1 label{
-        /* width: 400px; */
+        width: 380px;
     }
 }
 
