@@ -721,6 +721,15 @@ body {
   .technologies-cms-img{
     margin-left: 400px;
   }
+  @media(max-width:425px){
+    .technologies-expertise{
+        padding-top: 50px;
+    }
+    .technologies-expertise-part1 p{
+        font-size: 14px;
+        
+    }
+  }
   
   @media (min-width:376px)and (max-width:425px){
         .technologies-expertise-heading {
@@ -849,4 +858,11 @@ body {
   /* ----Section - 4 - Technologies Expertise---- */
   
 
+/* ----Section - 5 Application Modernization Benefits---- */
+
+
+
+
+
+/* ----Section - 5 Application Modernization Benefits---- */
 
