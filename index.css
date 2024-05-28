@@ -375,7 +375,7 @@ body {
     
     .modernization-res-sec1 label {
         /* margin-left: 20px;  */
-        width: 300px;
+        /* width: 300px; */
         position: absolute;
         left: 20px;
         font-size: 16px;
@@ -405,27 +405,6 @@ body {
         font-size: 12px;
     }
 
-    .modernization-res-show-down li{
-        width: max-content;
-        margin-left: -15px;
-        font-size: 15px;
-        line-height: 32px;
-    }
-    .modernization-res-show-down li::marker{
-        color: #2CA068;
-    }
-    .modernization-res-btn1{
-        margin: 20px 0;
-    height: 36px;
-    width: 290px;
-    border-radius: 8px;
-    border: none;
-    color: #fff;
-    font-weight: 500;
-    background: linear-gradient(93.27deg, #23899C -14.73%, #2CA068 104.65%);
-    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
-  
-    }
   } 
 
 @media(max-width:425px){
@@ -476,12 +455,12 @@ body {
 
 @media(min-width:321px)and (max-width:375px){
     .modernization-res-sec1 label{
-        width: 300px;
+        /* width: 300px; */
     }
 }
 @media(min-width:376px)and (max-width:425px){
     .modernization-res-sec1 label{
-        width: 400px;
+        /* width: 400px; */
     }
 }
 
