@@ -476,7 +476,7 @@ body {
 
 @media(min-width:321px)and (max-width:375px){
     .modernization-res-sec1 label{
-        width: 360px;
+        width: 300px;
     }
 }
 @media(min-width:376px)and (max-width:425px){
