@@ -67,54 +67,116 @@ $(document).ready(function() {
 // Section - 2 Application Modernization Services
 
 
+// document.addEventListener("DOMContentLoaded", function() {
+//     var headers = document.querySelectorAll('.modernization-res-sec1');
+//     var openSection = document.getElementById('modernization-res-sec1');
+
+//     function toggleSection(header) {
+//         var icon1 = header.querySelector('.toggle-icon');
+//         var icon = header.querySelector('.toggle-icon.icon');
+//         var label = header.querySelector('label');
+//         var content = header.nextElementSibling;
+
+//         if (content.style.display === 'none' || content.style.display === '') {
+//             // Close any currently open section
+//             if (openSection && openSection !== header) {
+//                 var openIcon1 = openSection.querySelector('.toggle-icon');
+//                 var openIcon = openSection.querySelector('.toggle-icon.icon');
+//                 var openLabel = openSection.querySelector('label');
+//                 var openContent = openSection.nextElementSibling;
+
+//                 openContent.style.display = 'none';
+//                 // openIcon1.style.backgroundColor = '#ffffff';
+//                 // openIcon1.style.color = '#000000';
+//                 // openLabel.style.fontWeight = '';
+//                 // openLabel.style.color = '';
+//                 openIcon.classList.remove('bi bi-dash-lg');
+//                 openIcon.classList.add('bi bi-plus');
+//                 openSection.classList.remove('active');
+//             }
+
+//             // Open the clicked section
+//             content.style.display = 'block';
+//             // icon1.style.backgroundColor = '#ffffff';
+//             // icon1.style.color = '#2CA068'; 
+//             // label.style.color = '#2CA068'; 
+//             // label.style.fontWeight = 'bold';
+//             icon.classList.remove('bi bi-plus');
+//             icon.classList.add('bi bi-dash-lg');
+//             header.classList.add('active');
+
+//             openSection = header;
+//         } else {
+//             // Close the clicked section
+//             content.style.display = 'none';
+//             // icon1.style.backgroundColor = '#ffffff';
+//             // icon1.style.color = '#000000';
+//             // label.style.fontWeight = '';
+//             // label.style.color = '';
+//             icon.classList.remove('bi bi-dash-lg');
+//             icon.classList.add('bi bi-plus');
+//             header.classList.remove('active');
+
+//             openSection = null;
+//         }
+//     }
+
+//     headers.forEach(function(header) {
+//         header.addEventListener('click', function() {
+//             toggleSection(header);
+//         });
+//     });
+
+//     // Initial state for Web App Development
+//     if (openSection) {
+//         // var initialIcon1 = openSection.querySelector('.toggle-icon');
+//         // var initialIcon = openSection.querySelector('.toggle-icon.icon');
+//         // var initialLabel = openSection.querySelector('label');
+//         // var initialContent = openSection.nextElementSibling;
+
+//         initialContent.style.display = 'block';
+//         // initialIcon1.style.backgroundColor = '#ffffff';
+//         // initialIcon1.style.color = '#2CA068'; 
+//         // initialLabel.style.color = '#2CA068'; 
+//         // initialLabel.style.fontWeight = 'bold';
+//         initialIcon.classList.remove('fa-plus');
+//         initialIcon.classList.add('fa-minus');
+//         openSection.classList.add('active');
+//     }
+// });
+
 document.addEventListener("DOMContentLoaded", function() {
     var headers = document.querySelectorAll('.modernization-res-sec1');
     var openSection = document.getElementById('modernization-res-sec1');
 
     function toggleSection(header) {
-        var icon1 = header.querySelector('.toggle-icon');
-        var icon = header.querySelector('.toggle-icon.icon');
-        var label = header.querySelector('label');
+        var icon = header.querySelector('.toggle-icon');
         var content = header.nextElementSibling;
 
         if (content.style.display === 'none' || content.style.display === '') {
             // Close any currently open section
             if (openSection && openSection !== header) {
-                var openIcon1 = openSection.querySelector('.toggle-icon');
-                var openIcon = openSection.querySelector('.toggle-icon.icon');
-                var openLabel = openSection.querySelector('label');
+                var openIcon = openSection.querySelector('.toggle-icon');
                 var openContent = openSection.nextElementSibling;
 
                 openContent.style.display = 'none';
-                // openIcon1.style.backgroundColor = '#ffffff';
-                // openIcon1.style.color = '#000000';
-                // openLabel.style.fontWeight = '';
-                // openLabel.style.color = '';
-                openIcon.classList.remove('fa-minus');
-                openIcon.classList.add('fa-plus');
+                openIcon.classList.remove('bi-dash-lg');
+                openIcon.classList.add('bi-plus');
                 openSection.classList.remove('active');
             }
 
             // Open the clicked section
             content.style.display = 'block';
-            // icon1.style.backgroundColor = '#ffffff';
-            // icon1.style.color = '#2CA068'; 
-            // label.style.color = '#2CA068'; 
-            // label.style.fontWeight = 'bold';
-            icon.classList.remove('fa-plus');
-            icon.classList.add('fa-minus');
+            icon.classList.remove('bi-plus');
+            icon.classList.add('bi-dash-lg');
             header.classList.add('active');
 
             openSection = header;
         } else {
             // Close the clicked section
             content.style.display = 'none';
-            // icon1.style.backgroundColor = '#ffffff';
-            // icon1.style.color = '#000000';
-            // label.style.fontWeight = '';
-            // label.style.color = '';
-            icon.classList.remove('fa-minus');
-            icon.classList.add('fa-plus');
+            icon.classList.remove('bi-dash-lg');
+            icon.classList.add('bi-plus');
             header.classList.remove('active');
 
             openSection = null;
@@ -129,21 +191,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Initial state for Web App Development
     if (openSection) {
-        // var initialIcon1 = openSection.querySelector('.toggle-icon');
-        // var initialIcon = openSection.querySelector('.toggle-icon.icon');
-        // var initialLabel = openSection.querySelector('label');
-        // var initialContent = openSection.nextElementSibling;
+        var initialIcon = openSection.querySelector('.toggle-icon');
+        var initialContent = openSection.nextElementSibling;
 
         initialContent.style.display = 'block';
-        // initialIcon1.style.backgroundColor = '#ffffff';
-        // initialIcon1.style.color = '#2CA068'; 
-        // initialLabel.style.color = '#2CA068'; 
-        // initialLabel.style.fontWeight = 'bold';
-        initialIcon.classList.remove('fa-plus');
-        initialIcon.classList.add('fa-minus');
+        initialIcon.classList.remove('bi-plus');
+        initialIcon.classList.add('bi-dash-lg');
         openSection.classList.add('active');
     }
 });
+
+
 
 
 //  Section - 4 technologies Experties

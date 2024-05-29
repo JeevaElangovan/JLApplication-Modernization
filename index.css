@@ -378,7 +378,7 @@ p {
   .modernization-res-sec1 i {
     position: absolute;
     right: 35px;
-    font-weight: 600;
+    font-size: x-large;
   }
   .modernization-services-res-part1 {
     display: flex;
@@ -3274,20 +3274,20 @@ padding-right: 2px;
     .col-md-1 {
       padding-left: 0; 
       margin-left: 0; 
-  }
+    } 
   
   .call-icon {
       position: relative; 
       margin-left: 15px !important; 
       margin-top: 20px; 
-  }
+    }
   
   
   @media (max-width: 768px) {
       .call-icon {
           margin-top: 15px;
       }
-  }
+    }
   
   .call-icon i {
       position: absolute;
@@ -3302,7 +3302,7 @@ padding-right: 2px;
       display: flex;
       justify-content: center;
       align-items: center;
-  }
+    }
   
     .green-line{
       display: none;
@@ -3362,9 +3362,11 @@ padding-right: 2px;
       margin-top: 70px;
     }
   }
-  /* ----Section - 11 Form - Get in touch---- */
 
-  /* ----Section - 12 Footer---- */
+
+/* ----Section - 11 Form - Get in touch---- */
+
+/* ----Section - 12 Footer---- */
 
 
 
