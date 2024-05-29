@@ -24,162 +24,183 @@
 
     <!-- NavBar -->
    
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white; height: auto; box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05); margin-bottom: 1px !important;">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top"
+    style="background-color: white; height: auto; box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05); margin-bottom: 1px !important;">
     <div class="container">
-      <a class="navbar-brand" href="#" style="padding: 0;">
-        <img src="Modernization/navbar - Logo.png" alt="Logo" class="nav-logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" style="border: none;"></span>
-      </button>
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <div class="sidebar-header">
-          <a class="navbar-brand" href="#" style="padding: 0;">
-            <img src="Modernization/navbar - Logo.png" alt="Logo" class="nav-logo-sidebar">
-          </a>
-          <span class="cancel-icon" onclick="closeSidebar()">&times;</span>
+        <a class="navbar-brand" href="#" style="padding: 0;">
+            <img src="Modernization/navbar - Logo.png" alt="Logo" class="nav-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="border: none;"></span>
+        </button>
+
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <a class="navbar-brand" href="#" style="padding: 0;">
+                    <img src="Modernization/navbar - Logo.png" alt="Logo" class="nav-logo-sidebar">
+                </a>
+                <span class="cancel-icon" onclick="closeSidebar()">&times;</span>
+            </div>
+            <ul class="navbar-nav" id="nav-sidebar-ul">
+                <li class="nav-item">
+                    <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+                        onclick="toggleDropdown('about')">About <i id="about-icon"
+                            class="fas bi-chevron-down about-icon"></i></a>
+                    <div id="about-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownAbout"
+                        style="display: none;">
+                        <a class="dropdown-item" href="#">JustLogix</a>
+                        <a class="dropdown-item" href="#">Skein Technologies</a>
+                        <a class="dropdown-item" href="#">Management</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Product</a>
+                    </div>
+                </li>
+                <hr class="footer-line" style="margin-top: 0px !important;">
+                <li class="nav-item" style="margin-top: -20px !important;">
+                    <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+                        onclick="toggleDropdown('services')">Services <i id="services-icon"
+                            class="fas bi-chevron-down"></i></a>
+                    <div id="services-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownServices"
+                        style="display: none;">
+                        <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                        <a class="dropdown-item" href="#">Home</a>
+                        <a class="dropdown-item" href="#">Management</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Product</a>
+                    </div>
+                </li>
+                <hr class="footer-line" style="margin-top: 0px !important;">
+                <li class="nav-item" style="margin-top: -20px !important;">
+                    <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+                        onclick="toggleDropdown('Technologies')">Technologies <i id="Technologies-icon"
+                            class="fas bi-chevron-down"></i></a>
+
+                    <div id="Technologies-dropdown" class="dropdown-menu"
+                        aria-labelledby="navbarDropdownTechnologies" style="display: none;">
+                        <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                        <a class="dropdown-item" href="#">Home</a>
+                        <a class="dropdown-item" href="#">Management</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Product</a>
+                    </div>
+                </li>
+                <hr class="footer-line" style="margin-top: 0px !important;">
+
+                <li class="nav-item" style="margin-top: -20px !important;">
+                    <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+                        onclick="toggleDropdown('Industries')">Industries <i id="Industries-icon"
+                            class="fas bi-chevron-down"></i></a>
+                    <div id="Industries-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownIndustries"
+                        style="display: none;">
+                        <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                        <a class="dropdown-item" href="#">Home</a>
+                        <a class="dropdown-item" href="#">Management</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Product</a>
+                    </div>
+                </li>
+                <hr class="footer-line" style="margin-top: 0px !important;">
+
+                <li class="nav-item" style="margin-top: -20px !important;">
+                    <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+                        onclick="toggleDropdown('Portfolios')">Portfolios
+                        <!-- <i id="services-icon"
+                            class="fas bi-chevron-down"></i> -->
+                    </a>
+                    <!-- <div id="Portfolios-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownPortfolios"
+                        style="display: none;">
+                        <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                        <a class="dropdown-item" href="#">Home</a>
+                        <a class="dropdown-item" href="#">Management</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Product</a>
+                    </div> -->
+                </li>
+                <hr class="footer-line" style="margin-top: 0px !important;">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><button type="button" class="navbar-button">Get in
+                            Touch</button></a>
+                </li>
+
+            </ul>
         </div>
-        <ul class="navbar-nav" id="nav-sidebar-ul">
-            <li class="nav-item">
-                <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-                    onclick="toggleDropdown('about')">About <i id="about-icon"
-                        class="fas bi-chevron-down about-icon"></i></a>
-                <div id="about-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownAbout"
-                    style="display: none;">
-                    <a class="dropdown-item" href="#">JustLogix</a>
-                    <a class="dropdown-item" href="#">Skein Technologies</a>
-                    <a class="dropdown-item" href="#">Management</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Product</a>
-                </div>
-            </li>
-          <hr class="footer-line" style="margin-top: 0px !important;">
-          <li class="nav-item" style="margin-top: -20px !important;">
-            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-              onclick="toggleDropdown('services')">Services <i id="services-icon" class="fas bi-chevron-down"></i></a>
-            <div id="services-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownServices"
-              style="display: none;">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <hr class="footer-line" style="margin-top: 0px !important;">
-          <li class="nav-item" style="margin-top: -20px !important;">
-            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-              onclick="toggleDropdown('Technologies')">Technologies <i id="services-icon"
-                class="fas bi-chevron-down"></i></a>
-            <div id="Technologies-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownTechnologies"
-              style="display: none;">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <hr class="footer-line" style="margin-top: 0px !important;">
 
-          <li class="nav-item" style="margin-top: -20px !important;">
-            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-              onclick="toggleDropdown('Industries')">Industries <i id="services-icon"
-                class="fas bi-chevron-down"></i></a>
-            <div id="Industries-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownIndustries"
-              style="display: none;">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <hr class="footer-line" style="margin-top: 0px !important;">
-
-          <li class="nav-item" style="margin-top: -20px !important;">
-            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-              onclick="toggleDropdown('Portfolios')">Portfolios </a>
-            
-          </li>
-          <hr class="footer-line" style="margin-top: 0px !important;">
-          <li class="nav-item">
-            <a class="nav-link" href="#"><button type="button" class="navbar-button">Get in Touch</button></a>
-          </li>
-
-          <!-- Add other dropdown items -->
-        </ul>
-      </div>
-      <!-- End Sidebar -->
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto"
-          style="font-weight: 400; font-family: 'Source Sans Pro', sans-serif; gap: 10px !important;">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownIndustries" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownIndustries">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTechnologies" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownTechnologies">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technologies</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown" style="margin-top: 1px;">
-            <a class="nav-link" href="#" id="navbarDropdownPortfolio" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><button type="button" class="navbar_button">Get in Touch</button></a>
-          </li>
-        </ul>
-      </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto"
+                style="font-weight: 400; font-family: 'Source Sans Pro', sans-serif; gap: 10px !important;">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
+                        <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                        <a class="dropdown-item" href="#">Home</a>
+                        <a class="dropdown-item" href="#">Management</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Product</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
+                        <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                        <a class="dropdown-item" href="#">Home</a>
+                        <a class="dropdown-item" href="#">Management</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Product</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownIndustries" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownIndustries">
+                        <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                        <a class="dropdown-item" href="#">Home</a>
+                        <a class="dropdown-item" href="#">Management</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Product</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTechnologies" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownTechnologies">
+                        <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                        <a class="dropdown-item" href="#">Home</a>
+                        <a class="dropdown-item" href="#">Management</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Product</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technologies</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+                        <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                        <a class="dropdown-item" href="#">Home</a>
+                        <a class="dropdown-item" href="#">Management</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Product</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" style="margin-top: 1px !important; color: #676968 !important;">
+                    <a class="nav-link dropdown-togglee" href="#" id="navbarDropdownPortfolio" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                    <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+                        <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                        <a class="dropdown-item" href="#">Home</a>
+                        <a class="dropdown-item" href="#">Management</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Product</a>
+                    </div> -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><button type="button" class="navbar_button">Get in
+                            Touch</button></a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
     
@@ -493,7 +514,7 @@
 
 
 <div class="container why-choose-us">
-    <div class="why-choose-us-head">
+    <div class="container why-choose-us-head">
         <h1>Why <span style="color: #2CA068;">Choose Us</span></h1>
     </div>
 
@@ -747,19 +768,1096 @@
 
 <!-- Section - 5 Application Modernization Benefits -->
 
+<div class=" WebDevelopment-benefits-maindiv">
+    <div class="container">
+     
+        <div class=" WebDevelopment-benefits-mainheading">
+        <h1 class=" WebDevelopment-benefits-webdev">
+            Application Modernization <span style="color: #2CA068;">Benefits</span> 
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4  WebDevelopment-benefits-center1">
+          <!-- <img src="Modernization/Application Modernization benefits.png" class=" WebDevelopment-benefits-image1"/> -->
+        </div>
+        <div class="col-md-4">
+          <div class=" WebDevelopment-benefit-right">
+            <div class="leftsidefirstcol">
+              <img src="Modernization/bennefits - correct.png" class="webapp_section_8_leftsideimage"/>
+              <p class=" WebDevelopment-benefit-leftsideheading">Greater visibility</p>
+              <p class=" WebDevelopment-benefit-leftsidepara">Only an integrated cloud-based security stack is capable of providing the centralized visibility of cloud resources and data that is vital for defending.</p>
+            </div>
+            <div class="leftsidesecondcol">
+              <img src="Modernization/bennefits - correct.png" class="webapp_section_8_leftsideimage"/>
+              <p class=" WebDevelopment-benefit-leftsideheading">Centralized security</p>
+              <p class=" WebDevelopment-benefit-leftsidepara">Only an integrated cloud-based security stack is capable of providing the centralized visibility of cloud resources and data that is vital for defending.</p>
+            </div>
+            <div class="leftsidethirdcol">
+              <img src="Modernization/bennefits - correct.png" class="webapp_section_8_leftsideimage"/>
+              <p class=" WebDevelopment-benefit-leftsideheading">Data Protection</p>
+              <p class=" WebDevelopment-benefit-leftsidepara">Only an integrated cloud-based security stack is capable of providing the centralized visibility of cloud resources and data that is vital for defending.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 webapp_section_8_center">
+          <img src="Modernization/Application Modernization benefits.png" class="webapp_section_8_image"/>
+        </div>
+        <div class="col-md-4">
+          <div class=" WebDevelopment-benefit-right">
+            <div class="leftsidefirstcol">
+              <img src="Modernization/bennefits - correct.png" class="webapp_section_8_leftsideimage"/>
+              <p class=" WebDevelopment-benefit-leftsideheading">Greater visibility</p>
+              <p class=" WebDevelopment-benefit-leftsidepara">Only an integrated cloud-based security stack is capable of providing the centralized visibility of cloud resources and data that is vital for defending.</p>
+            </div>
+            <div class="leftsidesecondcol">
+              <img src="Modernization/bennefits - correct.png" class="webapp_section_8_leftsideimage"/>
+              <p class=" WebDevelopment-benefit-leftsideheading">Centralized security</p>
+              <p class=" WebDevelopment-benefit-leftsidepara">Only an integrated cloud-based security stack is capable of providing the centralized visibility of cloud resources and data that is vital for defending.</p>
+            </div>
+            <div class="leftsidethirdcol">
+              <img src="Modernization/bennefits - correct.png" class="webapp_section_8_leftsideimage"/>
+              <p class=" WebDevelopment-benefit-leftsideheading">Data Protection</p>
+              <p class=" WebDevelopment-benefit-leftsidepara">Only an integrated cloud-based security stack is capable of providing the centralized visibility of cloud resources and data that is vital for defending.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Section - 6 Growing Industries with Application Modernization -->
+
+<div class="container">
+    <div class="cloudcomputingindustries-web">
+    <div class="row">
+        <div class="col-md-6 cloud-computing-industries-column1" >
+            <h1 class="cloudcomputingindustriesheading" >Growing Industries with 
+                <span class="cloudcomputingindustriesspan"> Application Modernization</span></h1> 
+                <p class=cloudcomputingindustries-p1>
+                    Our full-stack PHP web development team builds customized solutions for your business – no matter which industry you operate in. We can ensure the development of the optimal PHP-based web solution in sync with your specific industry and your project requirements. From healthcare to finance, retail to technology, our PHP Development services serve as the cornerstone for progress, providing the essential tools and expertise to fuel growth and innovation across a multitude of industries.  
+                </p>
+                <p class=cloudcomputingindustries-p2>
+                    From healthcare to finance, retail to technology, our PHP Development services serve as the cornerstone for progress, providing the essential tools and expertise to fuel growth and innovation across a multitude of industries.
+                </p>
+                <p class=cloudcomputingindustries-p3>
+                    From healthcare to finance, retail to technology, our PHP Development services serve as the cornerstone for progress, providing the essential tools and expertise to fuel growth and innovation across a multitude of industries.
+                </p>
+        </div>
+        <div class="col-md-6 cloudcomputingindustriescard-whole" style="padding:40px">
+            <div class="row">
+            <div class="col-md">
+                <div class="row">
+                    <div class="cloudcomputingindustriescard" >
+                        <div class="card-body">
+                        <img src="Modernization/Healthcare.png" alt="Healthcare"  class=" cloudcomputingindustriescard-image1">
+                        <h6>Healthcare</h6>
+                        <p>Smart apps catering to the needs of healthcare service providers.</p>
+                    </div>
+                    </div>
+                    <div class="cloudcomputingindustriescard"  >
+                        <div class="card-body">
+                        <img src="Modernization/E-Learning.png" alt="E-Learning" class=" cloudcomputingindustriescard-image1">
+                        <h6>E-Learning</h6>
+                        <p>Smart apps catering to the needs of healthcare service providers.</p>
+                    </div>
+                    </div>
+                    <div class="cloudcomputingindustriescard">
+                        <div class="card-body">
+                            <img src="Modernization/Banking & Finance.png" alt="Banking & Finance"  class=" cloudcomputingindustriescard-image1">
+                            <h6>Banking & Finance</h6>
+                            <p>Smart apps catering to the needs of healthcare service providers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  class="col-md ml-3 cloud-computing-industries-row-card " style="margin-top:80px;">
+                <div class="row">
+                <div class="cloudcomputingindustriescard1">
+                    <div class="card-body">
+                  <img src="Modernization/Retail & Ecommerce.png" alt="Retail & Ecommerce" class=" cloudcomputingindustriescard1-image">
+                  <h6>Retail & Ecommerce</h6>
+                    <p>Smart apps catering to the needs of healthcare service providers.</p>
+                </div>
+                </div>
+                <div class="cloudcomputingindustriescard1">
+                    <div class="card-body">
+                   <img src="Modernization/Fintech.png" alt="Fintech"  class=" cloudcomputingindustriescard1-image">
+                   <h6>Fintech</h6>
+                    <p>Smart apps catering to the needs of healthcare service providers.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+<!-- Section - 6 Growing Industries with Application Modernization (Responsive) -->
+
+<div class="container cloudcomputingindustries-mobile">
+    <h1 class="cloudcomputingindustriesheading1">Growing Industries with 
+        <span class="cloudcomputingindustriesspan1"> Cloud Computing</span></h1>
+<div class="card-container cloud-computing-industries-card-container">
+    <div class="card cloud-computing-industries-card-design">
+        <div class="card-body">
+            <img src="Modernization/Healthcare.png" alt="Healthcare" class="cloud-computing-industries-card1-image">
+            <h6>Healthcare</h6>
+            <p>Smart apps catering to the needs of healthcare service providers.</p>
+        </div>
+    </div>
+    <div class="card cloud-computing-industries-card-design">  <div class="card-body">
+        <img src="Modernization/E-Learning.png" alt="E-Learning" class="cloud-computing-industries-card1-image">
+        <h6>E-Learning</h6>
+        <p>Customized solutions to boost travel & tourism business.</p>
+    </div>
+</div>
+    <div class="card cloud-computing-industries-card-design">  <div class="card-body">
+        <img src="Modernization/Banking & Finance.png" alt="Banking & Finance" class="cloud-computing-industries-card1-image">
+        <h6>Banking & Finance</h6>
+        <p>Secure solutions to meet needs of banking & fintech companies.</p>
+    </div>
+</div>
+</div>
+    <p class="cloudcomputingindustriescard1-para1" >Our full-stack PHP web development team builds customized solutions for your business – no matter which industry you operate in.
+        We can ensure the development of the optimal PHP-based web solution in sync with your specific industry and your project requirements. 
+        From healthcare to finance, retail to technology, our PHP Development services serve as the cornerstone for progress, providing the 
+        essential tools and expertise to fuel growth and innovation across a multitude of industries.
+         </p>
+         <p class="cloudcomputingindustriescard1-para2">From healthcare to finance, retail to technology, our PHP Development services serve as the cornerstone for progress,
+           providing the essential tools and expertise to fuel growth and innovation across a multitude of industries. From healthcare to finance,
+            retail to technology, our PHP Development services serve as the cornerstone for progress, providing the essential tools and expertise 
+            to fuel growth and innovation across a multitude of industries.
+        </p>
+</div>
 
 
 
+<!-- Section - 7 Our Case Studies -->
 
 
 
+<div class="container case-container">
+    <div class="row">
+        <div class="col-5" style="margin-top: 15% !important;">
+            <h1 class="our-case-header">Our <span class="our-case-header-span"> Case Studies </span></h1>
+            <p class="our-case-header-description"> At JustLogix, we specialize in providing cutting-edge IT
+                solutions across a multitude of industries, fostering innovation, growth, and digital transformation
+                worldwide.</p>
+        </div>
+        <div class="col-7">
+            <div id="cardGroup1" class="row card-group active">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card case-maincard">
+                            <img src="Modernization/case - computer vision.png" alt="Image Description" class="case-img">
+                            <div class="card-content">
+                                <h2>Computer Vision</h2>
+                                <p>We reinvent the eCommerce software solution experience with AI-driven chatbots
+                                    and intelligent virtual assistants that provide personalized customer.</p>
+                                <a href="link">Read more <span> <img src="Modernization/case - top arrow.png"> </span> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card case-maincard">
+                            <img src="Modernization/case - cross chain.png" alt="Image Description" class="case-img">
+                            <div class="card-content">
+                                <h2>The Future of Cross-Chain Swaps </h2>
+                                <p>We reinvent the eCommerce software solution experience with AI-driven chatbots
+                                    and intelligent virtual assistants that provide personalized customer.</p>
+                                <a href="link">Read more <span> <img src="Modernization/case - top arrow.png"> </span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cardGroup2" class="row card-group">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card case-maincard">
+                            <img src="Modernization/case - computer vision.png" alt="Image Description" class="case-img">
+                            <div class="card-content">
+                                <h2>Computer Vision2</h2>
+                                <p>We reinvent the eCommerce software solution experience with AI-driven chatbots
+                                    and intelligent virtual assistants that provide personalized customer.</p>
+                                <a href="link">Read more <span> <img src="Modernization/case - top arrow.png"> </span> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card case-maincard">
+                            <img src="Modernization/case - cross chain.png" alt="Image Description" class="case-img">
+                            <div class="card-content">
+                                <h2>The Future of Cross-Chain Swaps2 </h2>
+                                <p>We reinvent the eCommerce software solution experience with AI-driven chatbots
+                                    and intelligent virtual assistants that provide personalized customer.</p>
+                                <a href="link">Read more <span> <img src="Modernization/case - top arrow.png"> </span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cardGroup3" class="row card-group">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card case-maincard">
+                            <img src="Modernization/case - computer vision.png" alt="Image Description" class="case-img">
+                            <div class="card-content">
+                                <h2>Computer Vision3</h2>
+                                <p>We reinvent the eCommerce software solution experience with AI-driven chatbots
+                                    and intelligent virtual assistants that provide personalized customer.</p>
+                                <a href="link">Read more <span> <img src="Modernization/case - top arrow.png"> </span> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card case-maincard">
+                            <img src="Modernization/case - cross chain.png" alt="Image Description" class="case-img">
+                            <div class="card-content">
+                                <h2>The Future of Cross-Chain Swaps3 </h2>
+                                <p>We reinvent the eCommerce software solution experience with AI-driven chatbots
+                                    and intelligent virtual assistants that provide personalized customer.</p>
+                                <a href="link">Read more <span> <img src="Modernization/case - top arrow.png"> </span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cardGroup4" class="row card-group">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card case-maincard">
+                            <img src="Modernization/case - computer vision.png" alt="Image Description" class="case-img">
+                            <div class="card-content">
+                                <h2>Computer Vision4</h2>
+                                <p>We reinvent the eCommerce software solution experience with AI-driven chatbots
+                                    and intelligent virtual assistants that provide personalized customer.</p>
+                                <a href="link">Read more <span> <img src="Modernization/case - top arrow.png"> </span> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card case-maincard">
+                            <img src="Modernization/case - cross chain.png" alt="Image Description" class="case-img">
+                            <div class="card-content">
+                                <h2>The Future of Cross-Chain Swaps4 </h2>
+                                <p>We reinvent the eCommerce software solution experience with AI-driven chatbots
+                                    and intelligent virtual assistants that provide personalized customer.</p>
+                                <a href="link">Read more <span> <img src="Modernization/case - top arrow.png"> </span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-case-button">
+                <button id="btn1" class="btn case-button"></button>
+                <button id="btn2" class="btn case-button"></button>
+                <button id="btn3" class="btn case-button"></button>
+                <button id="btn4" class="btn case-button"></button>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <br>
-    <br>
-    <br>
-    <br>
+
+<!-- Section - 7 Our Case Studies (Responsive) -->
+
+<div class="container case-studies-mobile-main-container">
+    <h1>Our <span class="case-studies-mobile-span">Case Studies</span> </h1>
+    <p>
+        At JustLogix, we specialize in providing cutting-edge IT solutions across a multitude of industries,
+        fostering innovation, growth, and digital transformation worldwide. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+
+    <div class="case-studies-mobile-container">
+        <div class="case-studies-mobile">
+            <div class="case-studies-mobile-card">
+                <div class="card case-studies-mobile-card1">
+                    <img src="Modernization/case - computer vision.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Computer Vision</h5>
+                        <p class="card-text">
+                            We reinvent the eCommerce software solution experience with AI-driven chatbots
+                            and intelligent virtual assistants that provide personalized customer.
+                        </p>
+                        <div style="margin-top:0px !important; margin-bottom: 0px !important;">
+                            <a href="link">Read more <span> <img src="Modernization/case - top arrow.png"> </span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="case-studies-mobile-card">
+                <div class="card case-studies-mobile-card1">
+                    <img src="Modernization/case - cross chain.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The Future of Cross-Chain Swaps </h5>
+                        <p class="card-text">
+                            We reinvent the eCommerce software solution experience with AI-driven chatbots
+                            and intelligent virtual assistants that provide personalized customer.
+                        </p>
+                        <div style="margin-top:0px !important; margin-bottom: 0px !important;">
+                            <a href="link">Read more <span> <img src="Modernization/case - top arrow.png"> </span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+        <div class="case-studies-mobile-arrows">
+            <img src="Modernization/case - left arrow.png" class="case-studies-mobile-arrow" id="prevArrow1">
+            <img src="Modernization/case - right arrow.png" class="case-studies-mobile-arrow" id="nextArrow1">
+        </div>
+    </div>
+</div>
+
+
+<!-- Section - 8  Our testimonials -->
+
+<div class="container our-testimonial-web-screen">
+    <div class="row">
+        <div class=" our-testimonial-heading">
+          <h1 class=" our-testimonial-header">Our <span class="our-testimonial-line">Testimonials </span></h1>
+        </div>
+      </div>
+    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card-deck">
+                    <div class="card our-testimonial-card">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <img src="Modernization/testimonials - img.png" alt="comma">
+                                <p>Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut   modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!</p>
+                                <div class="row">
+                                    <div class="col-9 d-flex align-items-center">
+                                      <div>
+                                        <h2 class="mizara">Mizara Mona</h2>
+                                        <h2 class="project">Project manager</h2>
+                                      </div>
+                                      <div class="ml-auto ratingsection10">
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-half" style="color: rgba(229, 165, 0, 1);"></i>
+                                      </div>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="card our-testimonial-card">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <img src="Modernization/testimonials - img.png" alt="comma">
+                                <p>Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut   modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!</p>
+                                <div class="row">
+                                    <div class="col-9 d-flex align-items-center">
+                                      <div>
+                                        <h2 class="mizara">Mizara Mona</h2>
+                                        <h2 class="project">Project manager</h2>
+                                      </div>
+                                      <div class="ml-auto ratingsection10">
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-half" style="color: rgba(229, 165, 0, 1);"></i>
+                                      </div>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="card our-testimonial-card">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <img src="Modernization/testimonials - img.png" alt="comma">
+                                <p>Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut   modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!</p>
+                                <div class="row">
+                                    <div class="col-9 d-flex align-items-center">
+                                      <div>
+                                        <h2 class="mizara">Mizara Mona</h2>
+                                        <h2 class="project">Project manager</h2>
+                                      </div>
+                                      <div class="ml-auto ratingsection10">
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-half" style="color: rgba(229, 165, 0, 1);"></i>
+                                      </div>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card-deck">
+                    <div class="card our-testimonial-card">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <img src="Modernization/testimonials - img.png" alt="comma">
+                                <p>Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut   modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!</p>
+                                <div class="row">
+                                    <div class="col-9 d-flex align-items-center">
+                                      <div>
+                                        <h2 class="mizara">Mizara Mona</h2>
+                                        <h2 class="project">Project manager</h2>
+                                      </div>
+                                      <div class="ml-auto ratingsection10">
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-half" style="color: rgba(229, 165, 0, 1);"></i>
+                                      </div>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="card our-testimonial-card">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <img src="Modernization/testimonials - img.png" alt="comma">
+                                <p>Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut   modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!</p>
+                                <div class="row">
+                                    <div class="col-9 d-flex align-items-center">
+                                      <div>
+                                        <h2 class="mizara">Mizara Mona</h2>
+                                        <h2 class="project">Project manager</h2>
+                                      </div>
+                                      <div class="ml-auto ratingsection10">
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-half" style="color: rgba(229, 165, 0, 1);"></i>
+                                      </div>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="card our-testimonial-card">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <img src="Modernization/testimonials - img.png" alt="comma">
+                                <p>Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut   modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!</p>
+                                <div class="row">
+                                    <div class="col-9 d-flex align-items-center">
+                                      <div>
+                                        <h2 class="mizara">Mizara Mona</h2>
+                                        <h2 class="project">Project manager</h2>
+                                      </div>
+                                      <div class="ml-auto ratingsection10">
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-half" style="color: rgba(229, 165, 0, 1);"></i>
+                                      </div>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card-deck">
+                    <div class="card our-testimonial-card">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <img src="Modernization/testimonials - img.png" alt="comma">
+                                <p>Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut   modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!</p>
+                                <div class="row">
+                                    <div class="col-9 d-flex align-items-center">
+                                      <div>
+                                        <h2 class="mizara">Mizara Mona</h2>
+                                        <h2 class="project">Project manager</h2>
+                                      </div>
+                                      <div class="ml-auto ratingsection10">
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-half" style="color: rgba(229, 165, 0, 1);"></i>
+                                      </div>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="card our-testimonial-card">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <img src="Modernization/testimonials - img.png" alt="comma">
+                                <p>Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut   modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!</p>
+                                <div class="row">
+                                    <div class="col-9 d-flex align-items-center">
+                                      <div>
+                                        <h2 class="mizara">Mizara Mona</h2>
+                                        <h2 class="project">Project manager</h2>
+                                      </div>
+                                      <div class="ml-auto ratingsection10">
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-half" style="color: rgba(229, 165, 0, 1);"></i>
+                                      </div>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="card our-testimonial-card">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <img src="Modernization/testimonials - img.png" alt="comma">
+                                <p>Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut   modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!</p>
+                                <div class="row">
+                                    <div class="col-9 d-flex align-items-center">
+                                      <div>
+                                        <h2 class="mizara">Mizara Mona</h2>
+                                        <h2 class="project">Project manager</h2>
+                                      </div>
+                                      <div class="ml-auto ratingsection10">
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                                        <i class="bi bi-star-half" style="color: rgba(229, 165, 0, 1);"></i>
+                                      </div>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="carousel-indicators row carousel-indicators-row">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active dot-indicator" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" class="dot-indicator" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" class="dot-indicator" aria-label="Slide 3"></button>
+          </div>
+    </div>
+</div>
+
+
+<!-- Section - 8 Our Testimonials (Responsive) -->
+
+<div class="container our-testimonial-mobile-screen">
+  <div class="row">
+    <div class="our-testimonial-heading">
+      <h1 class="our-testimonial-header">Our <span class="our-testimonial-line">Testimonials</span></h1>
+    </div>
+  </div>
+  <div class="container">
+  <div class="outerlayertestimonial">
+  <div class="ourtestimoniallayout">
+    <div class="row">
+      <div id="testimonialCarousel" class="carousel slide " data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="6000">
+        <div class="carousel-indicators row carousel-indicators-row">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active dot-indicator" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" class="dot-indicator" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" class="dot-indicator" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" class="dot-indicator" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <img src="Modernization/testimonials - img.png" class=" float-start group68" alt="Image">
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="testimonialparagraph" style="display: flex;justify-content: center; align-items: center;">
+                  <p class="text-left">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint eum laudantium quam aut minus debitis quo consequatur maxime!</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+             
+              <div class="col-9 d-flex align-items-center">
+                <div>
+                  <h2 class="mizara">Mizara Mona</h2>
+                  <h2 class="project">Project manager</h2>
+                </div>
+                <div class="ml-auto ratingsection10">
+                  <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                  <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                  <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                  <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                  <i class="bi bi-star-half" style="color: rgba(229, 165, 0, 1);"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <img src="Modernization/testimonials - img.png" class="img-fluid float-start group68" alt="Image">
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="testimonialparagraph" style="display: flex;justify-content: center; align-items: center;">
+                  <p class="text-left">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint eum laudantium quam aut minus debitis quo consequatur maxime!</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9 d-flex align-items-center">
+                <div class="">
+                  <h2 class="mizara">Mizara Mona</h2>
+                  <h2 class="project">Project manager</h2>
+                </div>
+                <div class="ml-auto ratingsection10">
+                  <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                  <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                  <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                  <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                  <i class="bi bi-star-half" style="color: rgba(229, 165, 0, 1);"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <img src="Modernization/testimonials - img.png" class="img-fluid float-start group68" alt="Image">
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="testimonialparagraph" style="display: flex;justify-content: center; align-items: center;">
+                  <p class="text-left">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint eum laudantium quam aut minus debitis quo consequatur maxime!</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9 d-flex align-items-center">
+                <div class="">
+                  <h2 class="mizara">Mizara Mona</h2>
+                  <h2 class="project">Project manager</h2>
+                </div>
+                <div class="ml-auto ratingsection10">
+                  <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                  <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                  <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                  <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                  <i class="bi bi-star-half" style="color: rgba(229, 165, 0, 1);"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row ">
+              <img src="Modernization/testimonials - img.png" class="img-fluid float-start group68" alt="Image">
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="testimonialparagraph" style="display: flex;justify-content: center; align-items: center;">
+                  <p class="text-left">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint eum laudantium quam aut minus debitis quo consequatur maxime!</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9 d-flex align-items-center">
+                <div class="">
+                  <h2 class="mizara">Mizara Mona</h2>
+                  <h2 class="project">Project manager</h2>
+                </div>
+                <div class="ml-auto ratingsection10">
+                  <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                  <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                  <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                  <i class="bi bi-star-fill" style="color: rgba(229, 165, 0, 1);"></i>
+                  <i class="bi bi-star-half" style="color: rgba(229, 165, 0, 1);"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+<!--Section - 9 News & Blogs-->
+
+
+<div class="about_session10_maindiv">
+    <div class="container">
+        <h1 class="about_session10_para1">
+        News and <span class="about_session10_span">Blogs</span>
+        </h1>
+      
+
+        <div class="container news-1 about-session active-blog">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-relative">
+                        <img class="img-fluid about_session10_image" src="Modernization/AR-VR Technology.png" alt="Medical">
+                        <div class="circle" style="background-color: #AA6BE0;">
+                            <div class="circle-content">
+                                <h6 class="mb-0">17</h6>
+                                <p class="mb-0">Jan/24</p>
+                            </div>
+                        </div>
+                    </div>
+         
+                    <p class="about-session__title">
+                        The Future of AR/VR Technology
+                    </p>
+                    <div class="d-flex">
+                        <img class="img-fluid about-session__profile" src="Modernization/news and blogs profile.png" alt="profile">
+                        <div class="align-self-end ml-2">
+                            <p class="about-session__profile-name">
+                                Kingston Prince
+                            </p>
+                        </div>
+              
+                    </div>
+                </div>
+      
+     
+   
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-relative">
+                        <img class="img-fluid about_session10_image" src="Modernization/Internet of Things (1).png" alt="Medical">
+                        <div class="circle" style="background: linear-gradient(133.26deg, #89CAFF 19.39%, #3F9AE4 85.45%);">
+                            <div class="circle-content">
+                                <h6 class="mb-0">6</h6>
+                                <p class="mb-0">Feb/24</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <p class="about-session__title">
+                        The Future of Cross-Chain Swaps
+                    </p>
+                    <div class="d-flex">
+                        <img class="img-fluid about-session__profile" src="Modernization/news and blogs profile.png" alt="profile">
+                        <div class="align-self-end ml-2">
+                            <p class="about-session__profile-name">
+                                Kingston Prince
+                            </p>
+                        </div>
+                
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-relative">
+                        <img class="img-fluid about_session10_image" src="Modernization/ChatBot Integration.png" alt="Medical">
+                        <div class="circle" style="background: linear-gradient(133.26deg, #F5CA9D 19.39%, #C59975 85.45%);">
+                            <div class="circle-content">
+                                <h6 class="mb-0">21</h6>
+                                <p class="mb-0">Feb/24</p>
+                            </div>
+                        </div>
+                    </div>
+          
+                    <p class="about-session__title">
+                        The Future of Cross-Chain Swaps
+                    </p>
+                    <div class="d-flex">
+                        <img class="img-fluid about-session__profile" src="Modernization/news and blogs profile.png" alt="profile">
+                        <div class="align-self-end ml-2">
+                            <p class="about-session__profile-name">
+                                Kingston Prince
+                            </p>
+                        </div>
+          
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+</div>
+
+
+
+<!-- Section - 10 Frequently Asked Questions -->
+
+<div class="container">
+    <div class="section13layout">
+        <div class="section13header">
+            
+                <h1 class="section13heading">Frequently Asked <span>Questions</span></h1>
+            
+            </div>
+            <div class="container">
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Can’t find any answer for your question?</span>
+                   <button class="accordion-toggle"><i class="arrow down"></i></button>
+              </div>
+                  <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Can’t find any answer for your question?</span>
+                   <button class="accordion-toggle"><i class="arrow down"></i></button>
+              </div>
+                  <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Can’t find any answer for your question?</span>
+                   <button class="accordion-toggle"><i class="arrow down"></i></button>
+              </div>
+                <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span>Can’t find any answer for your question?</span>
+                 <button class="accordion-toggle"><i class="arrow down"></i></button>
+            </div>
+              <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <span>Can’t find any answer for your question?</span>
+               <button class="accordion-toggle"><i class="arrow down"></i></button>
+          </div>
+            <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>Can’t find any answer for your question?</span>
+             <button class="accordion-toggle"><i class="arrow down"></i></button>
+        </div>
+          <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Can’t find any answer for your question?</span>
+           <button class="accordion-toggle"><i class="arrow down"></i></button>
+      </div>
+        <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+    </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<br>
+<!--Section - 11 Form - Get in touch -->
+
+<div class="form-background">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 ">
+                <div class="form-head">Get in <span class="form-touch">Touch</span></div>
+                <h5 class="form-top">Want to start a project with us?</h5>
+                <p class="form-paragraph">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed mol stias animi ad quos modi qui libero laborum ab omnis magnam.</p>
+        
+                <div class="row">
+                    <div class="col-md-1">
+                        <div class="call-icon"><i class="bi bi-telephone"></i></div>
+                            <div class="green-line"></div>
+                                <div class="vertical-line"></div>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="step-content">
+                            <h5>STEP 1</h5>
+                            <h6>Join a discovery call</h6>
+                            <p>Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-1">
+                        <div class="call-icon"><i class="bi bi-person"></i></div>
+                        <div class="green-line"></div>
+                        <div class="vertical-line2"></div>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="step-content">
+                            <h5>STEP 2</h5>
+                            <h6>Get top 1% application on your team</h6>
+                            <p>Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-1">
+                        <div class="call-icon"><i class="bi bi-check2"></i></div>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="step-content">
+                            <h5>STEP 3</h5>
+                            <h6>Get started and track performance.</h6>
+                            <p>Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-6 form-content2">
+                <img src="Modernization/form - cicrle.png" class="circleimage">
+                <div class="form-container">
+                    <h3 class="form-text">Send Your <span class="form-touch">Idea's</span></h3>
+                    <div class="form-line"></div>
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="firstname">First Name<span class="form-star">*</span></label>
+                                <input id="firstname" type="text" class="form-control" name="first name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="lastname">Last Name<span class="form-star">*</span></label>
+                                <input id="lastname" type="text" class="form-control" name="last name">
+                            </div>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="email">Email<span class="form-star">*</span></label>
+                            <input id="email" type="email" class="form-control" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" name="message" style="height: 100px;"></textarea>
+                        </div>
+                        <button type="submit" class="form-button">Start Your Project</button>
+                    </form>
+                </div>
+                <img src="Modernization/form - scribble 1.png" class="arrowimage">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br>
+<!-- Section - 12 Footer -->
+
+<footer class="footer">
+    <div class="container">
+      <div class="row footer-columns justify-content-between">
+        <div id="footer-column" class="col-md-2 footer-column footer-about">
+          <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
+            About<i class="bi bi-chevron-down footer-arrow-icon"></i>
+          </h3>
+          <ul id="footer-menu" class="footer-menu">
+            <li>Who We Are</li>
+            <li>Career</li>
+            <li>How We Work</li>
+            <li>Blogs</li>
+            <li>Get in Touch</li>
+          </ul>
+          <hr class="footer-line">
+        </div>
+        <div id="footer-column" class="col-md-2 footer-column footer-services">
+          <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
+            Services<i class="bi bi-chevron-down footer-arrow-icon"></i>
+          </h3>
+          <ul id="footer-menu" class="footer-menu">
+            <li>Web App Development</li>
+            <li>Mobile App Development</li>
+            <li>Software Development</li>
+            <li>Support & Maintenance</li>
+            <li>QA Testing</li>
+            <li>DevOps</li>
+            <li>Blog</li>
+            <li>Cloud Services</li>
+          </ul>
+          <hr class="footer-line">
+        </div>
+        <div id="footer-column" class="col-md-2 footer-column footer-technologies">
+          <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
+            Technologies<i class="bi bi-chevron-down footer-arrow-icon"></i>
+          </h3>
+          <ul id="footer-menu" class="footer-menu">
+            <li>Blockchain</li>
+            <li>Artificial Intelligence</li>
+            <li>AR & VR</li>
+            <li>Cloud Computing</li>
+            <li>Internet of Things</li>
+            <li>more...</li>
+          </ul>
+          <hr class="footer-line">
+        </div>
+        <div id="footer-column" class="col-md-2 footer-column footer-industries">
+          <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
+            Industries<i class="bi bi-chevron-down footer-arrow-icon"></i>
+          </h3>
+          <ul id="footer-menu" class="footer-menu">
+            <li>FinTech</li>
+            <li>Banking</li>
+            <li>Retail</li>
+            <li>Manufacturing</li>
+            <li>Insurance</li>
+            <li>Real Estate</li>
+            <li>Travel & Tourism</li>
+            <li>Education</li>
+          </ul>
+          <hr class="footer-line">
+        </div>
+        <div id="footer-column" class="col-md-2 footer-column footer-portfolios">
+          <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
+            Portfolios<i class="bi bi-chevron-down footer-arrow-icon"></i>
+          </h3>
+          <ul id="footer-menu" class="footer-menu">
+            <li>Kid's World</li>
+            <li>Resto</li>
+          </ul>
+          <hr class="footer-line">
+        </div>
+      </div>
+    </div>
+      <hr class="footer-border">
+      <div class="container">
+        <div class="row justify-content-between footer-bottom-content">
+            <div class="col-md-auto">
+                <p class="mb-0 footer-text1">
+                    <a href="#1">Privacy Policy </a>| <a href="#2">Terms & Conditions </a>|<a href="#3"> Sitemap</a>
+                </p>
+            </div>
+            <div class="col-md-auto ">
+                <p class="footer-text2"><span class="copysymbol">&copy;</span><span class="copysymbol_text">2024 All Rights Reserved - justlogix.com</span></p>
+            </div>
+            <div class="col-md-auto d-flex justify-content-center">
+                <div class="footer-text3">
+                    <a href="#" class="btn btn-link icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="btn btn-link icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="btn btn-link icon"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="btn btn-link icon"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> 
+</footer>
+
+
+
     <script src="index.js" defer></script>
     <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
