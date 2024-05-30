@@ -314,18 +314,18 @@ p {
   .modernization-services-res-head h1 {
     position: relative;
     font-size: xx-large;
-    padding-right: 20px;
+    /* padding-right: 20px; */
   }
 
   .modernization-services-res-head h1::after {
-    content: "";
+    /* content: "";
     position: absolute;
     top: 51%;
     margin-left: 15px;
     width: 28px !important;
     height: 3px !important;
     border-radius: 50px !important;
-    background-color: #2ca068;
+    background-color: #2ca068; */
   }
   .modernization-icon-res {
     background: linear-gradient(180deg, #23899c 0%, #2ca068 100%) !important;
@@ -407,7 +407,7 @@ p {
     /* font-size: 35px; */
   }
 
-  .modernization-services-res-head h1::after {
+  /* .modernization-services-res-head h1::after {
     content: "";
     position: absolute;
     top: 76%;
@@ -416,7 +416,7 @@ p {
     height: 4px;
     border-radius: 5px;
     background-color: #2ca068;
-  }
+  } */
 }
 
 .modernization-res-sec1.active label {
@@ -761,6 +761,7 @@ p {
     height: 3px !important;
     border-radius: 50px !important;
     background-color: #2ca068;
+    display: none;
   }
   .section5-btn1 button {
     margin-left: 90px;
@@ -1075,6 +1076,7 @@ p {
     width: 28px;
     height: 3px;
     margin-top: 25px;
+    display: none;
     
   }
   .WebDevelopment-benefits-webdevbenefits {
