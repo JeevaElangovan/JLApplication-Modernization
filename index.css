@@ -139,6 +139,7 @@ p {
 
 .modernization-services-hero-part1 h1 {
   font-size: 56px;
+  color: #000000;
 }
 
 .modernization-services-hero-part1 h6 {
@@ -209,6 +210,7 @@ p {
   position: relative;
   margin-bottom: 30px;
   font-size: 48px;
+  color: #000000;
   
 }
 
@@ -318,6 +320,7 @@ p {
   .modernization-services-res-head h1 {
     position: relative;
     font-size: xx-large;
+    color: #000000;
     /* padding-right: 20px; */
   }
 
@@ -350,6 +353,7 @@ p {
   }
   .modernization-services-res-head h1 {
     margin-left: 12px;
+    color: #000000;
   }
   .modernization-services-res-head p {
     text-align: left;
@@ -408,6 +412,7 @@ p {
 @media (max-width: 425px) {
   .modernization-services-res-head h1 {
     position: relative;
+    color: #000000;
     /* font-size: 35px; */
   }
 
@@ -485,6 +490,7 @@ p {
 .why-choose-us-head h1 {
   position: relative;
   font-size: 48px;
+  color: #000000;
 }
 
 .why-choose-us-head h1::after {
@@ -543,7 +549,7 @@ p {
 
   .why-choose-us-col-2 h5,
   .why-choose-us-col-2 p {
-    margin-left: -150px;
+    margin-left: -140px;
     /* padding-right: 5px !important; */
   }
 }
@@ -621,6 +627,7 @@ p {
   position: relative;
   margin-top: 100px;
   font-size: 48px;
+  color: #000000;
 }
 
 .technologies-expertise-heading::after {
@@ -719,16 +726,31 @@ p {
 .technologies-cms-img {
   margin-left: 400px;
 }
+
+@media(min-width:426px){
+    .single-line{
+      display: none;
+    }
+  }
+
+
+
 @media (max-width: 425px) {
   .technologies-expertise {
-    padding-top: 50px;
+    padding-top: 20px;
+    padding-left: 12px !important;
   }
   .technologies-expertise-part1 p {
     font-size: 14px;
     margin-left: -10px;
   }
   .technologies-expertise-images {
-    margin-left: -15px;
+    margin-left: -10px !important;
+   
+  }
+  .technologies-expertise-images img{
+    height: 77px;
+    width: 58px;
   }
   .technologies-expertise-heading{
     margin-left: -10px;
@@ -737,6 +759,22 @@ p {
     height: 36px;
     width: 204px;
   }
+
+  .single-line{
+    margin-top: -19px !important;
+    position: relative;
+    z-index: -10;
+    
+  }
+  .single-line hr{
+    height: 2px;
+    background: rgba(233, 233, 233, 1);
+    width: 109%;
+    margin-left: -35px;
+
+  }
+
+
 }
 
 @media (min-width: 376px) and (max-width: 425px) {
@@ -748,7 +786,7 @@ p {
     margin-top: -100px !important;
   }
   .technologies-expertise-images {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: -20px;
   }
 
@@ -1197,6 +1235,7 @@ p {
   box-shadow: 4px 4px 20px 6px #c2c1c133;
   border: none;
 }
+
 .cloud-computing-industries-column1 {
   /* padding-right: 70px !important; */
 }
@@ -1223,7 +1262,7 @@ p {
   text-align: left;
   margin-bottom: 10px !important;
   margin-top: 2dvh;
-  margin-left: 10px !important;
+  /* margin-left: 10px !important; */
 }
 
 .cloudcomputingindustriescard1 h6 {
@@ -1232,7 +1271,7 @@ p {
   line-height: 20.11px;
   text-align: left;
   margin-top: 20px;
-  margin-left: 10px !important;
+  /* margin-left: 10px !important; */
 }
 .cloudcomputingindustriescard p {
   font-size: 12px;
@@ -1254,7 +1293,7 @@ p {
   width: 64px;
   height: 64px;
   margin-top: -5px !important;
-  margin-left: 10px !important;
+  /* margin-left: 10px !important; */
 }
 
 .cloudcomputingindustriescard-image1 {
@@ -1262,7 +1301,7 @@ p {
   width: 64px;
   height: 64px;
   margin-top: -5px !important;
-  margin-left: 10px !important;
+  /* margin-left: 10px !important; */
 }
 
 .cloud-computing-industries-card-container {
@@ -1322,7 +1361,7 @@ p {
   }
   .cloud-computing-industries-card-design p {
     font-size: 12px;
-    margin-left: -10px;
+    /* margin-left: -10px; */
   }
 
   .cloudcomputingindustriescard1-para1 {
@@ -1380,6 +1419,7 @@ p {
     line-height: 60.34px;
     text-align: left;
     padding-bottom: 20px;
+    color: #000000;
 
 }
 
@@ -1565,6 +1605,7 @@ p {
         font-weight: 600;
         line-height: 40.22px;
         text-align: left;
+        color: #000000;
     }
 
     .case-studies-mobile-main-container p {
@@ -1791,6 +1832,8 @@ opacity: 0px;
     border-radius: 8px;
     background-color: #2CA068;
   }
+
+  
   /* Mobile Screen  */
   .our-testimonial-heading{
     width: 100%;
@@ -1873,6 +1916,14 @@ opacity: 0px;
   .ratingsection10 i{
     font-size: 14px;
   }
+  
+  .carousel-item {
+    padding: 5px;
+    }
+    .group68{
+        margin-bottom: 0px;
+        margin-left: 12px;
+    }
 }
 
 
@@ -1904,6 +1955,7 @@ opacity: 0px;
   text-align: left;
   /* margin-left: 90px; */
   margin-top: 50px;
+  color: #000000;
 
 }
 
@@ -2009,6 +2061,7 @@ opacity: 0px;
 .footer-text1, .footer-text2 {
   font-size: 14px;
 }
+
 .footer-menu {
   display: block; 
 }
@@ -2053,7 +2106,7 @@ opacity: 0px;
   color: #ffffff;
 }
 .about-session__title{
-  margin-top: 55px;
+  margin-top: 40px;
   font-size: 24px;
   color: #2B2A2C;
 
@@ -2071,6 +2124,12 @@ opacity: 0px;
 }
 
 @media only screen and (max-width: 768px) {
+    .about_session10_maindiv{
+        margin-top: 80px;
+    }
+    .about-session{
+        margin-top: -10px;
+    }
   .about_session10_para1 {
     font-size: xx-large;
     text-align: left;
@@ -2282,7 +2341,7 @@ padding-right: 2px;
   @media (max-width: 728px){
     .section13layout{
       width: 100%;
-      margin-top: 20px;
+      margin-top: 40px;
      }
      .accordion-item {
       margin-bottom: 10px !important; 
@@ -2376,6 +2435,7 @@ padding-right: 2px;
     margin-bottom: 50px;
     font-weight: 700;
     line-height: 60.34px;
+    color: #000000;
   
   }
   
@@ -2434,7 +2494,9 @@ padding-right: 2px;
   }
   
   .form-text {
-    font-size: 24px;
+    font-size: 24px !important;
+    font-weight: 700 ;
+    color: black !important;
   }
   
   .form-line {
@@ -3473,8 +3535,9 @@ padding-right: 2px;
     text-overflow: ellipsis;
   }
   .copysymbol {
-  font-size: 20px;
+  font-size: 17px;
   padding-right: 5px;
+ 
   }
   .copysymbol_text{
   margin-top: -100px;
@@ -3531,7 +3594,7 @@ padding-right: 2px;
     align-items: center;
   }
   .footer-text2{
-    margin-top: 15px;
+    margin-top: 18px;
   }
   .footer-text3 i{
     margin-left: 2px !important;
