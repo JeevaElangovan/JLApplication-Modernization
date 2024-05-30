@@ -297,6 +297,10 @@ p {
   .modernization-res-sec1 .fa-light {
     margin-left: 5px !important;
   }
+  .modernization-res-sec1 label{
+    width: 220px;
+    
+  }
 }
 
 @media (max-width: 425px) {
@@ -452,6 +456,7 @@ p {
 @media (min-width: 321px) and (max-width: 375px) {
   .modernization-res-sec1 label {
     width: 300px;
+    
   }
   .modernization-services-res-head h1::after {
     top: 85% !important;
@@ -459,7 +464,8 @@ p {
 }
 @media (min-width: 376px) and (max-width: 425px) {
   .modernization-res-sec1 label {
-    width: 380px;
+    width: 80%;
+    
   }
 }
 @media (max-width: 320px) {
