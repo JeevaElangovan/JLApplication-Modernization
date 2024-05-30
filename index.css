@@ -314,6 +314,7 @@ p {
   .modernization-services-res-head h1 {
     position: relative;
     font-size: xx-large;
+    padding-right: 20px;
   }
 
   .modernization-services-res-head h1::after {
@@ -3535,3 +3536,4 @@ padding-right: 2px;
 
 
   /* ----Section - 12 Footer---- */
+
